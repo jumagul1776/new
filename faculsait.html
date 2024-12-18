@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математика жана Компьютердик Технологиялар Факультети - Расмий Сайт</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            background-color: white;
+            margin-top: 20px;
+            padding: 40px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: none;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            color: #0056b3;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .toggle-btn {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .toggle-btn:hover {
+            background-color: #00408b;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        address {
+            font-style: normal;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #0056b3;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+
+        window.onload = function() {
+            showSection('home');
+        };
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Математика жана Компьютердик Технологиялар Факультети</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('home')">Башкы бет</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('about')">Факультеттер</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('teachers')">Мугалимдер</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('contracts')">Контракттар</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('departments')">Кафедралар</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('dean')">Деканы</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('courses')">Курстар</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('contact')">Байланыш</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section active">
+        <div class="container">
+            <h2>Математика жана Компьютердик Технологиялар Факультетине кош келиңиздер!</h2>
+            <p>Бул жерде сиз билим алуу, илимий изилдөөлөр жана кесиптик өнүгүү боюнча керектүү маалыматтарды таба аласыз.
+                ОшМПУнун Математика жана Компьютердик Технологиялар факультети математика, информатика жана IT адистерин даярдоого багытталган. Факультеттин негизги багыттары: Математика жана Информатика мугалимдерин даярдоо – жалпы билим берүүчү жана кесиптик окуу мекемелери үчүн жогорку квалификациялуу педагогдорду чыгаруу. Программалоо жана IT технологиялары – программалоо, веб-дизайн жана маалыматтык системалар боюнча адистерди окутуу. Математика боюнча адистик билим берүү – фундаменталдуу математикалык билимдерди тереңдетүү. Факультет студенттерге заманбап билим берүү технологияларын жана инновациялык методикаларды үйрөтүүгө басым жасайт.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Факультеттер</h2>
+            <ul>
+                <li>Гуманитардык факультет</li>
+                <li>Жаратылыш-географиялык факультет</li>
+                <li>Кыргыз-Орус факультети</li>
+                <li>Математика жана компьютердик технологиялар факультети</li>
+                <li>Музыкалык-педагогикалык факультет</li>
+                <li>Дене тарбия факультети</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="teachers" class="section">
+        <div class="container">
+            <h2>Мугалимдер</h2>
+            <ul>
+        <li>Турдубаева Кандалат Ташполотовна — Декан, доцент, п.и.к.</li>
+        <li>Бердибекова Кулийпа Турдибековна — Кафедра башчысынын м.а., улук окутуучу.</li>
+        <li>Осмоналиев Абдикамил Бурканович — ф.м.и.к., доцент.</li>
+        <li>Арынбаев Эралы Калилович — Электрондук башкаруу бөлүмүнүн башчысы, п.и.к., доцент.</li>
+        <li>Кудуев Алтынбек Жалилбекович — МИТ факультетинин деканынын орун басары, тех.и.к., доцент.</li>
+        <li>Жумабаева Акылай Нооманжановна — Декандын орун басары, окутуучу.</li>
+        <li>Жусупбек кызы Жыргал — Окутуучу.</li>
+        <li>Калыбекова Миргул Жумабековна — Окутуучу, магистр.</li>
+        <li>Орозбаева Айнура Абдазовна — Окутуучу.</li>
+        <li>Ырысбаева Айсырга Асановна — Окутуучу.</li>
+        <li>Абдыкалыкова Насиба Алияровна — Окутуучу.</li>
+        <li>Ысаков Токтогул Шарипович — Инженер-программист.</li>
+        <li>Акпаралиева Батма Арымовна — Окутуучу.</li>
+        <li>Турсунбаева Нурмира Султаналиевна — Окутуучу.</li>
+        <li>Турганбаева Акпари Балтабаевна — Улук окутуучу.</li>
+        <li>Дүйшөбай кызы Жаркынай — Лаборант.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contracts" class="section">
+        <div class="container">
+            <h2>Контракттар</h2>
+            <ul>
+                <li>Күндүзгү бөлүм: 29,000 сом</li>
+                <li>Сырттан окуу: 26,000 сом</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="departments" class="section">
+        <div class="container">
+            <h2>Кафедралар</h2>
+            <ul>
+                <li>Информатика кафедрасы</li>
+                <li>Математика кафедрасы</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="dean" class="section">
+        <div class="container">
+            <h2>Деканат</h2>
+            <p>Декан: Исакова Венера</p>
+        </div>
+    </section>
+
+    <section id="courses" class="section">
+        <div class="container">
+            <h2>Курстар</h2>
+            <ul>
+                <li>Python программалоо</li>
+                <li>Алгоритмдер жана маалымат структуралары</li>
+                <li>Математикалык моделдөө</li>
+                <li>Жасалма интеллект</li>
+                <li>Компьютердик тармактар</li>
+                <li>Маалымат базалары</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Байланыш</h2>
+            <p>Биз менен байланышуу үчүн:</p>
+            <address>
+                <strong>Дарек:</strong> Ош шаары, Насирдин Исанов көчөсү, 73A<br>
+                <strong>Телефон:</strong> +996 701 044 940<br>
+                <strong>Электрондук почта:</strong> info@oshmpu.kg
+            </address>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 ОшМПУ. Бардык укуктар корголгон.</p>
+    </footer>
+
+</body>
+</html>
